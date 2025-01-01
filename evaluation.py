@@ -17,10 +17,10 @@ def evaluate_model(y_true, y_pred):
     f1 = f1_score(y_true, y_pred, average='weighted')
     cm = confusion_matrix(y_true, y_pred)
     
-    print(f"Accuracy: {accuracy}")
-    print(f"Precision: {precision}")
-    print(f"Recall: {recall}")
-    print(f"F1 Score: {f1}")
+    print(f"Accuracy: {accuracy*100:.2f}%")
+    print(f"Precision: {precision*100:.2f}%")
+    print(f"Recall: {recall*100:.2f}%")
+    print(f"F1 Score: {f1*100:.2f}%")
     
     plt.figure(figsize=(10, 7))
     sns.heatmap(cm, annot=True, fmt='d', cmap='Blues', xticklabels=set(y_true), yticklabels=set(y_true))

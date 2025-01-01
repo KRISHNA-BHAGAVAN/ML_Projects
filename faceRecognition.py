@@ -11,7 +11,7 @@ from dynamic_display import display_dynamic_name
 base_url = "https://info.aec.edu.in/AEC/StudentPhotos/"
 
 # Load student details from Excel
-file_path = "C:/Users/acer/Documents/student_details.xlsx"
+file_path = "student_details.xlsx"
 df = pd.read_excel(file_path)
 roll_numbers = df["Rollno"].tolist()
 

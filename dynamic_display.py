@@ -2,7 +2,7 @@ import cv2
 import pandas as pd
 
 # Load student details from Excel
-student_data = pd.read_excel("C:/Users/acer/Documents/student_details.xlsx")
+student_data = pd.read_excel("student_details.xlsx")
 
 # Create a dictionary where each Rollno maps to a tuple of (Student_Name, Student_Type, Section)
 student_details = dict(zip(student_data['Rollno'], zip(student_data['Student_Name'], student_data['student_type'], student_data['section'])))
